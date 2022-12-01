@@ -1,0 +1,18 @@
+[2022-11-06T16:08:12.807] [ERROR] error - ReferenceError: ctx is not defined
+    at C:\Users\rain\Desktop\vue3.0project\manager-server\app.js:40:5
+    at dispatch (C:\Users\rain\Desktop\vue3.0project\manager-server\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\rain\Desktop\vue3.0project\manager-server\app.js:33:11
+    at dispatch (C:\Users\rain\Desktop\vue3.0project\manager-server\node_modules\koa-compose\index.js:42:32)
+    at views (C:\Users\rain\Desktop\vue3.0project\manager-server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (C:\Users\rain\Desktop\vue3.0project\manager-server\node_modules\koa-compose\index.js:42:32)
+    at serve (C:\Users\rain\Desktop\vue3.0project\manager-server\node_modules\koa-static\index.js:53:15)
+    at async bodyParser (C:\Users\rain\Desktop\vue3.0project\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-11-06T16:09:50.421] [ERROR] error - ReferenceError: ctx is not defined
+    at C:\Users\rain\Desktop\vue3.0project\manager-server\app.js:39:5
+    at dispatch (C:\Users\rain\Desktop\vue3.0project\manager-server\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\rain\Desktop\vue3.0project\manager-server\app.js:33:11
+    at dispatch (C:\Users\rain\Desktop\vue3.0project\manager-server\node_modules\koa-compose\index.js:42:32)
+    at views (C:\Users\rain\Desktop\vue3.0project\manager-server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (C:\Users\rain\Desktop\vue3.0project\manager-server\node_modules\koa-compose\index.js:42:32)
+    at serve (C:\Users\rain\Desktop\vue3.0project\manager-server\node_modules\koa-static\index.js:53:15)
+    at async bodyParser (C:\Users\rain\Desktop\vue3.0project\manager-server\node_modules\koa-bodyparser\index.js:95:5)
