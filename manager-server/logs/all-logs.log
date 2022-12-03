@@ -206,3 +206,21 @@
 [2022-12-03T22:27:26.464] [INFO] info - post params:{"userName":"tom","userPwd":"123456"}
 [2022-12-03T22:28:04.649] [INFO] info - get params:{}
 [2022-12-03T22:28:04.650] [INFO] info - post params:{"userName":"tom","userPwd":"123456"}
+[2022-12-03T22:28:22.754] [INFO] info - info output
+[2022-12-03T22:28:22.773] [INFO] info - **数据库链接成功**
+[2022-12-03T22:28:28.445] [INFO] info - get params:{}
+[2022-12-03T22:28:28.445] [INFO] info - post params:{}
+[2022-12-03T22:28:28.452] [INFO] info - get params:{}
+[2022-12-03T22:28:28.453] [INFO] info - post params:{}
+[2022-12-03T22:28:44.781] [INFO] info - get params:{}
+[2022-12-03T22:28:44.782] [INFO] info - post params:{"userName":"tom","userPwd":"123456"}
+[2022-12-03T22:28:44.841] [INFO] info - get params:{}
+[2022-12-03T22:28:44.842] [INFO] info - post params:{}
+[2022-12-03T22:28:44.843] [INFO] info - get params:{}
+[2022-12-03T22:28:44.844] [INFO] info - post params:{}
+[2022-12-03T22:29:33.157] [INFO] info - get params:{}
+[2022-12-03T22:29:33.157] [INFO] info - post params:{"userName":"tom","userPwd":"123456"}
+[2022-12-03T22:29:33.196] [INFO] info - get params:{}
+[2022-12-03T22:29:33.196] [INFO] info - post params:{}
+[2022-12-03T22:29:33.198] [INFO] info - get params:{}
+[2022-12-03T22:29:33.198] [INFO] info - post params:{}
