@@ -19,7 +19,6 @@ module.exports = {
         pageSize *= 1
         const skipIndex = (pageNum - 1) * pageSize //为啥？
 
-
         return {
             page: {
                 pageNum,

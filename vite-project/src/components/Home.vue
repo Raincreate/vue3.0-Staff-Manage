@@ -1,9 +1,11 @@
 <script >
 import TreeMenu from './TreeMenu.vue'
+import BreadCard from './BreadCard.vue';
   export default{
     name:'home',
     components:{
-      TreeMenu
+      TreeMenu,
+      BreadCard,
     },
     data(){
       return {
@@ -62,7 +64,9 @@ import TreeMenu from './TreeMenu.vue'
       <div class="nav-top">
         <div class="nav-left">
           <el-icon><fold class="menu-fold" @click="isFold"></fold></el-icon>
-          <div class="bread">面包屑</div>
+          <div class="bread">
+            <BreadCard/>
+          </div>
         </div>
         
         <div class="user-info">

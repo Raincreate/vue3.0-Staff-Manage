@@ -1,5 +1,5 @@
 <script >
-import {User,View} from '@element-plus/icons-vue'
+import { User,View } from '@element-plus/icons-vue'
 export default{
   name:'login',
   data(){
@@ -20,12 +20,13 @@ export default{
     },
     login(){
       this.$refs.loginOut.validate((res)=>{
-        // console.log(res);
+        console.log(res);
         if(res){
+          console.log('loginout res');
           this.$api.login(this.user).then((res)=>{
-          // console.log(res);
-          this.$store.commit('saveUserInfo',res)
-          this.$router.push('/welcome')
+            console.log(res);
+            this.$store.commit('saveUserInfo',res)
+            this.$router.push('/welcome')
         })
         }
       })
@@ -39,22 +40,7 @@ export default{
       return View
     }
   },
-  mounted(){
-    // this.$request({
-    //   method:'get',
-    //   url:'/login',
-    //   data:{
-    //     name:'Rain',
-    //   },
-    // }).then((res)=>{
-    //   console.log('login:res ',res);
-    // })
-    // this.$request.get('/login',{name:'Rain'},{mock:true}).then((res)=>{
-    //   console.log(res);
-    // });
-    // this.$storage.setItem('user',{name:'rain',password:'123456'})
 
-  },
 };
 </script>
 

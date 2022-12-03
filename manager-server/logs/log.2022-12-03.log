@@ -1,0 +1,138 @@
+[2022-12-03T21:27:21.186] [ERROR] error - TypeError: Cannot read properties of null (reading '_doc')
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:10:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:27:22.956] [ERROR] error - TypeError: Cannot read properties of null (reading '_doc')
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:10:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:28:07.585] [ERROR] error - TypeError: Cannot read properties of null (reading '_doc')
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:10:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:29:12.685] [ERROR] error - TypeError: Cannot read properties of null (reading '_doc')
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:10:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:29:13.796] [ERROR] error - TypeError: Cannot read properties of null (reading '_doc')
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:10:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:30:43.629] [ERROR] error - TypeError: Cannot read properties of null (reading '_doc')
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:10:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:30:47.291] [ERROR] error - TypeError: Cannot read properties of null (reading '_doc')
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:10:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:31:19.690] [ERROR] error - TypeError: Cannot read properties of null (reading '_doc')
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:10:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:31:23.015] [ERROR] error - TypeError: Cannot read properties of null (reading '_doc')
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:10:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:34:12.751] [ERROR] error - TypeError: Cannot read properties of null (reading '_doc')
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:10:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:34:19.917] [ERROR] error - TypeError: Cannot read properties of null (reading '_doc')
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:10:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:34:27.504] [ERROR] error - TypeError: Cannot read properties of null (reading '_doc')
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:10:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:34:56.803] [ERROR] error - TypeError: Cannot read properties of null (reading '_doc')
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:10:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:35:00.497] [ERROR] error - TypeError: Cannot read properties of null (reading '_doc')
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:10:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:35:34.954] [ERROR] error - TypeError: Cannot read properties of null (reading '_doc')
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:10:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:35:43.554] [ERROR] error - TypeError: Cannot read properties of null (reading '_doc')
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:10:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:36:17.380] [ERROR] error - ReferenceError: data is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:12:15
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:36:22.044] [ERROR] error - ReferenceError: data is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:12:15
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:36:39.954] [ERROR] error - ReferenceError: data is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:12:15
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:37:05.815] [ERROR] error - ReferenceError: data is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:12:15
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T21:41:23.519] [ERROR] error - ReferenceError: data is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:12:15
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T22:27:26.479] [ERROR] error - ReferenceError: data is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:12:15
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T22:28:04.655] [ERROR] error - ReferenceError: data is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:12:15
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)

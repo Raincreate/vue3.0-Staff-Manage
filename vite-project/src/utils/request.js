@@ -25,6 +25,7 @@ service.interceptors.request.use((req) => {
 service.interceptors.response.use((res) => {
     // 响应的机制
     const { code, data, msg } = res.data
+    console.log('响应的拦截:', res.data);
     if (code === 200) {
         return data
     } else if (code === 50001) {
