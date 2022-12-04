@@ -1,6 +1,7 @@
 import axios from 'axios'
 import config from '../config'
 import router from '../router'
+import storage from './storage'
 
 import { ElMessage } from 'element-plus'
 
@@ -17,7 +18,8 @@ const service = axios.create({
 service.interceptors.request.use((req) => {
     // 请求的机制
     const header = req.headers
-    if (!header.Authorization) header.Authorization = 'Rain'
+    const { token } = storage.getItem('userInfo')
+    if (!header.Authorization) header.Authorization = 'tom ' + token
     return req
 })
 

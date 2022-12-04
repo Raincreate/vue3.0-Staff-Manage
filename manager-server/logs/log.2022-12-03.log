@@ -136,3 +136,95 @@
     at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:38:5
     at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
     at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T22:55:43.471] [ERROR] error - JsonWebTokenError: invalid signature
+    at C:\Users\rain\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (C:\Users\rain\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\rain\node_modules\jsonwebtoken\verify.js:94:10)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:46:29
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:33:11
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at views (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:15)
+[2022-12-03T23:07:54.869] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\rain\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\rain\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\rain\node_modules\jsonwebtoken\verify.js:94:10)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:46:29
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:33:11
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at views (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:15)
+[2022-12-03T23:12:16.425] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\rain\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\rain\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\rain\node_modules\jsonwebtoken\verify.js:94:10)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:46:29
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:33:11
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at views (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:15)
+[2022-12-03T23:12:20.705] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\rain\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\rain\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\rain\node_modules\jsonwebtoken\verify.js:94:10)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:46:29
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:33:11
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at views (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:15)
+[2022-12-03T23:13:55.879] [ERROR] error - ReferenceError: util is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:33:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T23:15:47.140] [ERROR] error - ReferenceError: util is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:33:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T23:16:00.711] [ERROR] error - ReferenceError: util is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:33:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-03T23:21:52.384] [ERROR] error - ReferenceError: util is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:33:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)

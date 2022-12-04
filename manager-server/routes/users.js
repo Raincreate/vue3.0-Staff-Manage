@@ -10,7 +10,7 @@ router.post('/login', async(ctx) => {
     const data = res._doc
     const token = jwt.sign({
         data: data
-    }, 'jason', { expiresIn: 30 });
+    }, 'tom', { expiresIn: 30 });
     try {
         if (res) {
             data.token = token

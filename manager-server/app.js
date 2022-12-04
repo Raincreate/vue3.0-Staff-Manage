@@ -4,15 +4,13 @@ const views = require('koa-views')
 const json = require('koa-json')
 const onerror = require('koa-onerror')
 const bodyparser = require('koa-bodyparser')
-    // const logger = require('koa-logger')
-    // const log4js = require("log4js")
 const log4js = require('./utils/log4j')
-
-// const index = require('./routes/index')
 const users = require('./routes/users')
 const router = require('koa-router')()
+const jwt = require('jsonwebtoken')
+const util = require('./utils/util')
+const koajwt = require('koa-jwt')
 
-// error handler
 onerror(app)
 require('./config/db')
 
@@ -21,8 +19,6 @@ app.use(bodyparser({
     enableTypes: ['json', 'form', 'text']
 }))
 app.use(json())
-    // app.use(logger())
-
 app.use(require('koa-static')(__dirname + '/public'))
 
 app.use(views(__dirname + '/views', {
@@ -35,9 +31,16 @@ app.use(async(ctx, next) => {
     log4js.info(`get params:${JSON.stringify(ctx.request.query)}`)
     log4js.info(`post params:${JSON.stringify(ctx.request.body)}`)
     const start = new Date()
-    await next()
-    const ms = new Date() - start
-    console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
+    await next().catch((error) => {
+            if (error.status == '401') {
+                ctx.status = 200
+                ctx.body = util.fail('Token认证失败', util.CODE.AUTH_ERROR)
+            } else {
+                throw error
+            }
+        })
+        // const ms = new Date() - start
+        // console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
 })
 
 // app.use(() => {
@@ -45,7 +48,15 @@ app.use(async(ctx, next) => {
 // })
 log4js.info('info output')
 
+app.use(koajwt({ secret: 'tom' }).unless({
+    path: [/^\/api\/users\/login/]
+}))
 router.prefix('/api')
+router.get('/leave/count', (ctx) => {
+        const token = ctx.request.headers.authorization.split(' ')[1]
+        const payload = jwt.verify(token, 'tom')
+        ctx.body = payload
+    })
     // routes
     // app.use(index.routes(), index.allowedMethods())
 router.use(users.routes(), users.allowedMethods())
