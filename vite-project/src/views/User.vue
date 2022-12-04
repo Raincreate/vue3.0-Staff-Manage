@@ -1,7 +1,7 @@
 <template>
   <div class="user-manager">
     <div class="query-form">
-      <el-form :inline="true" :model="user" ref="form">
+      <el-form :inline="true" :model="user" ref="form" >
         <el-form-item label="用户Id" prop="userId">
           <el-input v-model="user.userId" placeholder="请输入用户ID"></el-input>
         </el-form-item>
@@ -18,7 +18,7 @@
         </el-form-item>
         <el-form-item>
           <el-button type="primary" @click="handleQuery">查询</el-button>
-          <el-button @click="handleReset">重置</el-button>
+          <el-button @click="handleReset('form')">重置</el-button>
         </el-form-item>
       </el-form>
     </div>
@@ -38,7 +38,7 @@
           width="180" />
         <el-table-column fixed="right" label="操作" width="120">
           <template #default="scope">
-            <el-button link type="primary" size="small" >编辑</el-button>
+            <el-button link type="primary" size="small" @click="handleEdit(scope.row)">编辑</el-button>
             <el-button link type="danger" size="small" @click="handleDelete(scope.row)">删除</el-button>
           </template>
         </el-table-column>
@@ -52,13 +52,15 @@
       />
     </div>
 
-    <el-dialog title="用户新增" v-model="showModal">
-      <el-form :model="userForm" ref="dialogForm" label-width="100px">
+    <el-dialog title="用户新增" v-model="showModal" >
+      <el-form :model="userForm" ref="dialogForm" label-width="100px" :rules="rules">
         <el-form-item label="用户名" prop="userName">
-          <el-input placeholder="请输入用户名" v-model="userForm.userName" />
+          <el-input placeholder="请输入用户名" v-model="userForm.userName" :disabled="action == 'edit'"/>
         </el-form-item>
         <el-form-item label="邮箱" prop="userEmail">
-          <el-input placeholder="请输入邮箱" v-model="userForm.userEmail" />
+          <el-input placeholder="请输入邮箱" v-model="userForm.userEmail" :disabled="action == 'edit'">
+            <template #append>@jason.com</template>
+          </el-input>
         </el-form-item>
         <el-form-item label="手机号" prop="mobile">
           <el-input placeholder="请输入手机号" v-model="userForm.mobile" />
@@ -74,28 +76,45 @@
           </el-select>
         </el-form-item>
         <el-form-item label="系统角色" prop="roleList">
-          <el-select v-model="userForm.roleList" placeholder="请选择用户系统角色">
-            <el-option :value="1" ></el-option>
+          <el-select 
+            v-model="userForm.roleList" 
+            placeholder="请选择用户系统角色"
+            style="width:100%"
+            multiple
+          >
+            <el-option 
+              v-for="item in roleList" 
+              :value="item._id" 
+              :key="item._id" 
+              :label="item.roleName" 
+            ></el-option>
           </el-select>
         </el-form-item>
         <el-form-item label="部门" prop="deptId" >
           <el-cascader 
             v-model="userForm.deptId"
             placeholder="请选择部门" 
-            :options="[]"
+            :options="deptList"
             :props="{ checkStrictly: true, value: '_id',label:'deptName' }" 
             
           />
+
         </el-form-item>
-        
       </el-form>
-      
+      <template #footer>
+            <span class="dialog-footer">
+              <el-button @click="handleClose">取消</el-button>
+              <el-button type="primary" @click="handleSubmit">
+                确定
+              </el-button>
+            </span>
+          </template>
     </el-dialog>
   </div>
 </template>
 
 <script >
-import { onMounted,reactive,getCurrentInstance,ref } from 'vue';
+import { onMounted,reactive,getCurrentInstance,ref,toRaw } from 'vue';
 export default{
   name:'user',
   setup(){
@@ -103,6 +122,9 @@ export default{
     // 生命周期
     onMounted(()=>{
       getUserList()
+      // 为什么调用啊
+      getRoleList()
+      getDeptList()
     });
     const user = reactive({
       state:0
@@ -169,9 +191,9 @@ export default{
       getUserList()
     }
     // 重置
-    const handleReset = () => {
+    const handleReset = (form) => {
       // console.log('asd');
-      proxy.$refs.form.resetFields()
+      proxy.$refs[form].resetFields()
     }
     // 换页
     const handleCurrentChange = (current) =>{
@@ -219,11 +241,93 @@ export default{
     }
 
     const showModal = ref(false)
+    // 新增
     const handleAdd = () => {
       showModal.value = true
+      action.value= 'add'
     }
-    const userForm = reactive({})
+    const userForm = reactive({
+      state:1
+    })
 
+    const rules = reactive({
+      userName:[
+        {
+          required:true,
+          message:'请输入用户名',
+          trigger:'blur'
+        }
+      ],
+      userEmail:[
+        {
+          required:true,
+          message:'请输入用户邮箱',
+          trigger:'blur'
+        }
+      ],
+      deptId:[
+        {
+          required:true,
+          message:'请选择部门',
+          trigger:'blur'
+        }
+      ],
+      mobile:[
+        {
+          pattern:/1[3-9]\d{9}/,
+          message:'请输入正确的手机格式',
+          trigger:'blur'
+        }
+      ]
+    })
+
+    // 角色列表
+    const roleList = ref([])
+    const getRoleList = async() =>{
+      const res = await proxy.$api.getRoleLists()
+      roleList.value = res
+    }
+    // 部门列表
+    const deptList = ref([])
+    const getDeptList = async() =>{
+      const res = await proxy.$api.getDeptList()
+      deptList.value = res
+    }
+
+    const handleClose  = () =>{
+      showModal.value = false
+      handleReset('dialogForm')
+    }
+
+    const action = ref('add')
+    // 上交
+    const handleSubmit = () =>{
+      proxy.$refs.dialogForm.validate(async (valid)=>{
+        if(valid){
+          let params = toRaw(userForm)
+          console.log(params);
+          params.userEmail += "@jason.com"
+          params.action = action.value
+          let res = await proxy.$api.userSubmit()
+          console.log('rewess',res);
+          if(res){
+            showModal.value = false
+            proxy.$message.success('新增成功！')
+            handleReset('dialogForm')
+            getUserList()
+          }
+        }
+      })
+    }
+
+    // 编辑
+    const handleEdit = (row) =>{
+      action.value = 'edit'
+      showModal.value = true
+      proxy.$nextTick(()=>{
+        Object.assign(userForm,row)
+      })
+    }
     return{
       user,
       userList,
@@ -239,6 +343,15 @@ export default{
       showModal,
       handleAdd,
       userForm,
+      rules,
+      getRoleList,
+      roleList,
+      getDeptList,
+      deptList,
+      handleClose,
+      handleSubmit,
+      handleEdit,
+      action,
     }
   }
 };
