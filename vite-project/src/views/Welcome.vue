@@ -19,6 +19,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  background: #fff;
   .content{
     .sub-title{
       font-size: 30px;

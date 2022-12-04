@@ -5,7 +5,7 @@ import storage from './storage'
 
 import { ElMessage } from 'element-plus'
 
-const TOKEN_ERROR = 'Token认证失败，请重新登录'
+const TOKEN_ERROR = 'Token认证失败,请重新登录'
 const NETWORK_ERROR = '网络请求异常，请稍后重试'
 
 // 创建axios的示例对象
@@ -34,7 +34,7 @@ service.interceptors.response.use((res) => {
         ElMessage.error(TOKEN_ERROR)
         setTimeout(() => {
             router.push('/login')
-        }, 1500)
+        }, 1500000)
         return Promise.reject(TOKEN_ERROR)
     } else {
         ElMessage.error(msg || NETWORK_ERROR)
