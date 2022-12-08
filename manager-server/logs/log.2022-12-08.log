@@ -1,0 +1,70 @@
+[2022-12-08T23:11:03.464] [ERROR] error - TypeError: Cannot convert object to primitive value
+    at Object.pager (C:\Users\rain\vue3.0-Staff-Manage\manager-server\utils\util.js:18:9)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:28:39
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-08T23:14:38.679] [ERROR] error - TypeError: Cannot convert object to primitive value
+    at Object.pager (C:\Users\rain\vue3.0-Staff-Manage\manager-server\utils\util.js:18:9)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:28:39
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-08T23:14:44.349] [ERROR] error - TypeError: Cannot convert object to primitive value
+    at Object.pager (C:\Users\rain\vue3.0-Staff-Manage\manager-server\utils\util.js:18:9)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:28:39
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-08T23:14:52.075] [ERROR] error - TypeError: Cannot convert object to primitive value
+    at Object.pager (C:\Users\rain\vue3.0-Staff-Manage\manager-server\utils\util.js:18:9)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:28:39
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-08T23:15:04.717] [ERROR] error - TypeError: Cannot convert object to primitive value
+    at Object.pager (C:\Users\rain\vue3.0-Staff-Manage\manager-server\utils\util.js:18:9)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:28:39
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)

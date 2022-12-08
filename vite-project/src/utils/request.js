@@ -18,8 +18,8 @@ const service = axios.create({
 service.interceptors.request.use((req) => {
     // 请求的机制
     const header = req.headers
-    const { token } = storage.getItem('userInfo')
-    if (!header.Authorization) header.Authorization = 'tom ' + token
+    const { token = '' } = storage.getItem('userInfo') || {}
+    if (!header.Authorization) header.Authorization = 'Bearer ' + token
     return req
 })
 
@@ -34,7 +34,7 @@ service.interceptors.response.use((res) => {
         ElMessage.error(TOKEN_ERROR)
         setTimeout(() => {
             router.push('/login')
-        }, 1500000)
+        }, 1500)
         return Promise.reject(TOKEN_ERROR)
     } else {
         ElMessage.error(msg || NETWORK_ERROR)
