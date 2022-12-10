@@ -38,8 +38,8 @@
           width="180" />
         <el-table-column fixed="right" label="操作" width="120">
           <template #default="scope">
-            <el-button link type="primary" size="small" @click="handleEdit(scope.row)">编辑</el-button>
-            <el-button link type="danger" size="small" @click="handleDelete(scope.row)">删除</el-button>
+            <el-button link type="primary" @click="handleEdit(scope.row)">编辑</el-button>
+            <el-button link type="danger" @click="handleDelete(scope.row)">删除</el-button>
           </template>
         </el-table-column>
       </el-table>
@@ -115,6 +115,8 @@
 
 <script >
 import { onMounted,reactive,getCurrentInstance,ref,toRaw } from 'vue';
+import utils from '../utils/utils'
+
 export default{
   name:'user',
   setup(){
@@ -127,7 +129,7 @@ export default{
       getDeptList()
     });
     const user = reactive({
-      state:0
+      state: 0
     })
     const userList = ref([])
     const columns = reactive([
@@ -158,19 +160,25 @@ export default{
         prop:'state',
         formatter(row,column,value){
           return {
-            0:'在职',
-            1:'离职',
-            2:'试用期',
+            1:'在职',
+            2:'离职',
+            3:'试用期',
           }[value]
         }
       },
       {
         label:'注册时间',
-        prop:'createTime'
+        prop:'createTime',
+        formatter(row,column,value){
+          return utils.formateDate(new Date(value))
+        }
       },
       {
         label:'最后登录时间',
-        prop:'lastLoginTime'
+        prop:'lastLoginTime',
+        formatter(row,column,value){
+          return utils.formateDate(new Date(value))
+        }
       },
     ])
     
@@ -202,10 +210,10 @@ export default{
     }
     const handleDelete = async (row) =>{
       const res = await proxy.$api.userDelete({
-         userIds:[row.userId]
+         userIds: [row.userId]
       })
 
-      if(res.nModified > 0){
+      if(res.modifiedCount > 0){
         proxy.$message.success('删除成功！')
         getUserList()
       }else{
@@ -224,7 +232,7 @@ export default{
          userIds:checkUsersIds.value
       })
 
-      if(res.nModified > 0){
+      if(res.modifiedCount > 0){
         proxy.$message.success('删除成功！')
         getUserList()
       }else{
@@ -308,11 +316,15 @@ export default{
           console.log(params);
           params.userEmail += "@jason.com"
           params.action = action.value
-          let res = await proxy.$api.userSubmit()
+          let res = await proxy.$api.userSubmit(params)
           console.log('rewess',res);
           if(res){
             showModal.value = false
-            proxy.$message.success('新增成功！')
+            if(action.value == 'add'){
+              proxy.$message.success('新增用户成功！')
+            }else{
+              proxy.$message.success('编辑用户成功！')
+            }
             handleReset('dialogForm')
             getUserList()
           }
@@ -325,6 +337,8 @@ export default{
       action.value = 'edit'
       showModal.value = true
       proxy.$nextTick(()=>{
+        // 状态的更改
+        row.state = Number(row.state)
         Object.assign(userForm,row)
       })
     }

@@ -33,12 +33,13 @@ export default {
             mock: false
         })
     },
+    // 删除
     userDelete(params) {
         return request({
             url: '/users/delete',
             method: 'post',
             data: params,
-            mock: true
+            mock: false
         })
     },
     getRoleLists() {
@@ -59,7 +60,7 @@ export default {
         return request({
             url: '/users/operate',
             method: 'post',
-            mock: true,
+            mock: false,
             data: params
         })
     },
