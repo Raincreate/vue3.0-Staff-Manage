@@ -1,0 +1,84 @@
+[2022-12-11T12:49:18.706] [ERROR] error - ReferenceError: ctx is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:72:91
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T12:49:30.446] [ERROR] error - ReferenceError: ctx is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:72:91
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T12:50:04.559] [ERROR] error - ReferenceError: ctx is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:72:91
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T12:53:05.742] [ERROR] error - ReferenceError: ctx is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:72:91
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T12:53:13.931] [ERROR] error - ReferenceError: ctx is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:72:91
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T12:55:09.033] [ERROR] error - ReferenceError: uSER is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:79:21
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)

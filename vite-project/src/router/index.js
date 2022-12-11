@@ -38,15 +38,7 @@ const routes = [
                         component: () =>
                             import ('../views/Welcome.vue')
                     },
-                    {
-                        name: 'menu',
-                        path: 'menu',
-                        meta: {
-                            title: '菜单管理',
-                        },
-                        component: () =>
-                            import ('../views/Welcome.vue')
-                    },
+
                     {
                         name: 'role',
                         path: 'role',
@@ -66,6 +58,24 @@ const routes = [
                             import ('../views/Welcome.vue')
                     },
                 ]
+            },
+            {
+                name: '菜单管理',
+                path: '/system/menu',
+                meta: {
+                    title: '菜单管理',
+                },
+                component: () =>
+                    import ('../views/Menu.vue')
+            },
+            {
+                name: '角色管理',
+                path: '/system/role',
+                meta: {
+                    title: '角色管理',
+                },
+                component: () =>
+                    import ('../views/Role.vue')
             },
             {
                 name: 'audit',

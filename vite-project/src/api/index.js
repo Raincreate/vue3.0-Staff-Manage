@@ -6,7 +6,7 @@ export default {
             url: '/users/login',
             method: 'post',
             data: params,
-            // mock: true
+            mock: false
         })
     },
     noticeCount() {
@@ -64,4 +64,21 @@ export default {
             data: params
         })
     },
+    menuSubmit(params) {
+        return request({
+            url: '/menu/operate',
+            method: 'post',
+            mock: true,
+            data: params
+        })
+    },
+    // 获取角色列表
+    roleList() {
+        return request({
+            url: '/roles/list',
+            method: 'get',
+            mock: true,
+            // data: {}
+        })
+    }
 }

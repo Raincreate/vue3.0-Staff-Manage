@@ -24,8 +24,8 @@
     </div>
     <div class="base-table">
       <div class="action">
-        <el-button type="primary" @click="handleAdd">新增</el-button>
-        <el-button type="danger" @click="handleManyDelete">批量删除</el-button>
+        <el-button type="primary" @click="handleAdd" >新增</el-button>
+        <el-button type="danger" @click="handleManyDelete" >批量删除</el-button>
       </div>
       <el-table :data="userList"  style="width: 100%" @selection-change="handleSelectionChange">
         <el-table-column type="selection" width="55" />
@@ -35,11 +35,19 @@
           :prop="item.prop" 
           :label="item.label" 
           :formatter="item.formatter"
-          width="180" />
-        <el-table-column fixed="right" label="操作" width="120">
+        />
+        <el-table-column fixed="right" label="操作" width="150">
           <template #default="scope">
-            <el-button link type="primary" @click="handleEdit(scope.row)">编辑</el-button>
-            <el-button link type="danger" @click="handleDelete(scope.row)">删除</el-button>
+            <el-button  
+              type="primary" 
+              size="small"
+              @click="handleEdit(scope.row)"
+            >编辑</el-button>
+            <el-button  
+              type="danger" 
+              size="small"
+              @click="handleDelete(scope.row)"
+            >删除</el-button>
           </template>
         </el-table-column>
       </el-table>
@@ -52,8 +60,14 @@
       />
     </div>
 
-    <el-dialog title="用户新增" v-model="showModal" >
-      <el-form :model="userForm" ref="dialogForm" label-width="100px" :rules="rules">
+    <el-dialog title="用户新增" v-model="showModal" :before-close="handleCloseDialog">
+      <el-form 
+        :model="userForm" 
+        ref="dialogForm" 
+        label-width="100px" 
+        :rules="rules"
+        
+      >
         <el-form-item label="用户名" prop="userName">
           <el-input placeholder="请输入用户名" v-model="userForm.userName" :disabled="action == 'edit'"/>
         </el-form-item>
@@ -125,8 +139,8 @@ export default{
     onMounted(()=>{
       getUserList()
       // 为什么调用啊
-      getRoleList()
       getDeptList()
+      getRoleList()
     });
     const user = reactive({
       state: 0
@@ -187,12 +201,15 @@ export default{
       pageSize:10,
       total:10
     })
+    const checkedUserIds = ref([]);
     // 函数调用
     const getUserList = async () =>{
       let params = {...user , ...pages}
-      const { page,list } = await proxy.$api.userList(params)
-      pages.total = page.total
-      userList.value = list
+      try {
+        const { page,list } = await proxy.$api.userList(params)
+        pages.total = page.total
+        userList.value = list
+      } catch (error) { }
     }
     // 查询
     const handleQuery = () => {
@@ -221,15 +238,14 @@ export default{
       }
     }
 
-    const checkUsersIds = ref([])
     const handleManyDelete = async () =>{
-      if(checkUsersIds.value.length == 0){
+      if(checkedUserIds.value.length == 0){
         proxy.$message.error('请选择需要删除的对象')
         return
       }
 
       const res = await proxy.$api.userDelete({
-         userIds:checkUsersIds.value
+         userIds:checkedUserIds.value
       })
 
       if(res.modifiedCount > 0){
@@ -245,7 +261,7 @@ export default{
       list.forEach((item)=>{
         arr.push(item.userId)
       })
-      checkUsersIds.value = arr
+      checkedUserIds.value = arr
     }
 
     const showModal = ref(false)
@@ -313,7 +329,7 @@ export default{
       proxy.$refs.dialogForm.validate(async (valid)=>{
         if(valid){
           let params = toRaw(userForm)
-          console.log(params);
+          console.log('params::::',params);
           params.userEmail += "@jason.com"
           params.action = action.value
           let res = await proxy.$api.userSubmit(params)
@@ -342,6 +358,11 @@ export default{
         Object.assign(userForm,row)
       })
     }
+
+    const handleCloseDialog = () =>{
+      handleReset('dialogForm')
+      showModal.value = false
+    }
     return{
       user,
       userList,
@@ -352,7 +373,7 @@ export default{
       handleCurrentChange,
       handleDelete,
       handleManyDelete,
-      checkUsersIds,
+      checkedUserIds,
       handleSelectionChange,
       showModal,
       handleAdd,
@@ -366,6 +387,7 @@ export default{
       handleSubmit,
       handleEdit,
       action,
+      handleCloseDialog
     }
   }
 };
