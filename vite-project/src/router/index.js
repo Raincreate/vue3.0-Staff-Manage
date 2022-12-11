@@ -29,35 +29,7 @@ const routes = [
                 },
                 component: () =>
                     import ('../views/User.vue'),
-                children: [{
-                        name: 'user',
-                        path: 'user',
-                        meta: {
-                            title: '用户管理',
-                        },
-                        component: () =>
-                            import ('../views/Welcome.vue')
-                    },
-
-                    {
-                        name: 'role',
-                        path: 'role',
-                        meta: {
-                            title: '角色管理',
-                        },
-                        component: () =>
-                            import ('../views/Welcome.vue')
-                    },
-                    {
-                        name: 'dept',
-                        path: 'dept',
-                        meta: {
-                            title: '部门管理',
-                        },
-                        component: () =>
-                            import ('../views/Welcome.vue')
-                    },
-                ]
+                children: []
             },
             {
                 name: '菜单管理',
@@ -76,6 +48,15 @@ const routes = [
                 },
                 component: () =>
                     import ('../views/Role.vue')
+            },
+            {
+                name: '部门管理',
+                path: '/system/dept',
+                meta: {
+                    title: '部门管理',
+                },
+                component: () =>
+                    import ('../views/Dept.vue')
             },
             {
                 name: 'audit',

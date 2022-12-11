@@ -17,12 +17,13 @@ export default {
             mock: true
         })
     },
+    // 菜单
     MenuList() {
         return request({
             url: '/menu/list',
             method: 'get',
             data: {},
-            mock: true
+            mock: false
         })
     },
     userList(params) {
@@ -33,7 +34,7 @@ export default {
             mock: false
         })
     },
-    // 删除
+    // 用户删除
     userDelete(params) {
         return request({
             url: '/users/delete',
@@ -68,7 +69,7 @@ export default {
         return request({
             url: '/menu/operate',
             method: 'post',
-            mock: true,
+            mock: false,
             data: params
         })
     },
@@ -79,6 +80,24 @@ export default {
             method: 'get',
             mock: true,
             // data: {}
+        })
+    },
+    // role上传新增
+    roleOperate(params) {
+        return request({
+            url: '/roles/operate',
+            method: 'post',
+            data: params,
+            mock: true
+        })
+    },
+    // 用户设置权限
+    updatePermission(params) {
+        return request({
+            url: '/roles/update/permission',
+            method: 'post',
+            mock: true,
+            data: params
         })
     }
 }

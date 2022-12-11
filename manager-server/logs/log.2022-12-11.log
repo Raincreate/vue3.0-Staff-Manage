@@ -82,3 +82,176 @@
     at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
     at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
     at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T15:59:32.902] [ERROR] error - ReferenceError: getTreeMenu is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:26:9
+    at Array.map (<anonymous>)
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:24:10)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T15:59:32.913] [ERROR] error - ReferenceError: getTreeMenu is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:26:9
+    at Array.map (<anonymous>)
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:24:10)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T15:59:39.624] [ERROR] error - ReferenceError: getTreeMenu is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:26:9
+    at Array.map (<anonymous>)
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:24:10)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T15:59:39.631] [ERROR] error - ReferenceError: getTreeMenu is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:26:9
+    at Array.map (<anonymous>)
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:24:10)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:00:34.917] [ERROR] error - ReferenceError: getTreeMenu is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:26:9
+    at Array.map (<anonymous>)
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:24:10)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:00:34.923] [ERROR] error - ReferenceError: getTreeMenu is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:26:9
+    at Array.map (<anonymous>)
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:24:10)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:14:26.009] [ERROR] error - TypeError: Cannot read properties of null (reading 'slice')
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:20:34)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:14:32.401] [ERROR] error - TypeError: Cannot read properties of null (reading 'slice')
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:20:34)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:14:32.412] [ERROR] error - TypeError: Cannot read properties of null (reading 'slice')
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:20:34)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:14:35.279] [ERROR] error - TypeError: Cannot read properties of null (reading 'slice')
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:20:34)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:14:35.291] [ERROR] error - TypeError: Cannot read properties of null (reading 'slice')
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:20:34)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:14:38.776] [ERROR] error - TypeError: Cannot read properties of null (reading 'slice')
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:20:34)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:14:38.785] [ERROR] error - TypeError: Cannot read properties of null (reading 'slice')
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:20:34)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:14:49.953] [ERROR] error - TypeError: Cannot read properties of null (reading 'slice')
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:20:34)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:14:49.962] [ERROR] error - TypeError: Cannot read properties of null (reading 'slice')
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:20:34)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:14:57.476] [ERROR] error - TypeError: Cannot read properties of null (reading 'slice')
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:20:34)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:15:03.773] [ERROR] error - TypeError: Cannot read properties of null (reading 'slice')
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:20:34)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:15:17.128] [ERROR] error - TypeError: Cannot read properties of null (reading 'slice')
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:20:34)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:15:17.140] [ERROR] error - TypeError: Cannot read properties of null (reading 'slice')
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:20:34)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:15:24.852] [ERROR] error - TypeError: Cannot read properties of null (reading 'slice')
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:20:34)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:15:24.858] [ERROR] error - TypeError: Cannot read properties of null (reading 'slice')
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:20:34)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:16:46.621] [ERROR] error - TypeError: Cannot read properties of null (reading 'slice')
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:20:34)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-11T16:16:46.629] [ERROR] error - TypeError: Cannot read properties of null (reading 'slice')
+    at getMenuTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:20:34)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\menus.js:12:26
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:34:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)

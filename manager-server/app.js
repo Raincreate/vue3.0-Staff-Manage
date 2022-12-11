@@ -5,11 +5,12 @@ const json = require('koa-json')
 const onerror = require('koa-onerror')
 const bodyparser = require('koa-bodyparser')
 const log4js = require('./utils/log4j')
-const users = require('./routes/users')
 const router = require('koa-router')()
 const jwt = require('jsonwebtoken')
 const util = require('./utils/util')
 const koajwt = require('koa-jwt')
+const users = require('./routes/users')
+const menus = require('./routes/menus')
 
 onerror(app)
 require('./config/db')
@@ -30,11 +31,10 @@ app.use(async(ctx, next) => {
     // 服务端希望能够看到前端请求过来的数据
     log4js.info(`get params:${JSON.stringify(ctx.request.query)}`)
     log4js.info(`post params:${JSON.stringify(ctx.request.body)}`)
-    const start = new Date()
     await next().catch((error) => {
             if (error.status == '401') {
                 ctx.status = 200
-                ctx.body = util.fail('Token认证失败', util.CODE.AUTH_ERROR)
+                ctx.body = util.fail('Token认证失败le', util.CODE.AUTH_ERROR)
             } else {
                 throw error
             }
@@ -60,6 +60,7 @@ router.get('/leave/count', (ctx) => {
     // routes
     // app.use(index.routes(), index.allowedMethods())
 router.use(users.routes(), users.allowedMethods())
+router.use(menus.routes(), users.allowedMethods())
 app.use(router.routes(), router.allowedMethods())
 
 // error-handling
