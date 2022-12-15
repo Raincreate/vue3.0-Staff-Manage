@@ -6,7 +6,7 @@
           <el-input v-model="queryForm.roleName" placeholder="请输入角色名称"></el-input>
         </el-form-item>
         <el-form-item>
-          <el-button type="primary" @click="handleQuery">查询</el-button>
+          <el-button type="primary" @click="getRoleList">查询</el-button>
           <el-button @click="handleReset()">重置</el-button>
         </el-form-item>
       </el-form>
@@ -182,7 +182,10 @@ export default{
   },
   methods:{
     async getRoleList(){
-      const { list, page } = await this.$api.roleList(this.queryForm)
+      const { list, page } = await this.$api.roleList({
+        ...this.queryForm,
+        ...this.pager
+      })
       this.roleList = list
       this.pager = page
     },
@@ -194,13 +197,17 @@ export default{
     handleAdd(){
       console.log('123');
       this.showModal = true
-      this.action = 'add'
+      this.action = 'create'
     },
     handleCloseDetail(){
       this.showModal = true
       this.handleReset()
     },
-    handleCurrentChange(){},
+    // 分页的
+    handleCurrentChange(current){
+      this.pager.pageSize = current
+      this.getRoleList()
+    },
     handleQuery(){},
     handleClose(){
       this.showModal = false;
@@ -228,7 +235,11 @@ export default{
       this.showModal = true
       this.action = 'edit'
       this.$nextTick(()=>{
-        this.roleForm = row
+        this.roleForm = {
+          _id:row._id,
+          remark: row.remark,
+          roleName: row.roleName,
+        }
       })
     },
     handleDelete(_id){

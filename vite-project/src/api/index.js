@@ -43,11 +43,12 @@ export default {
             mock: false
         })
     },
+    // 
     getRoleLists() {
         return request({
             url: '/roles/allList',
             method: 'get',
-            mock: true
+            mock: false
         })
     },
     getDeptList() {
@@ -74,12 +75,12 @@ export default {
         })
     },
     // 获取角色列表
-    roleList() {
+    roleList(params) {
         return request({
             url: '/roles/list',
             method: 'get',
-            mock: true,
-            // data: {}
+            mock: false,
+            data: params
         })
     },
     // role上传新增
@@ -88,7 +89,7 @@ export default {
             url: '/roles/operate',
             method: 'post',
             data: params,
-            mock: true
+            mock: false
         })
     },
     // 用户设置权限
@@ -96,7 +97,7 @@ export default {
         return request({
             url: '/roles/update/permission',
             method: 'post',
-            mock: true,
+            mock: false,
             data: params
         })
     }
