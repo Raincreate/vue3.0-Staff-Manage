@@ -50,7 +50,7 @@
       v-model="showModel"
     >
       <el-form
-        ref="dialogForm"
+        ref="deptForm"
         :model="deptForm"
         :rules="rules"
         label-width="120px"
@@ -87,7 +87,7 @@
           </el-select>
         </el-form-item>
         <el-form-item label="邮箱" prop="userEmail">
-          <el-input v-model="deptForm.userEmail" disabled></el-input>
+          <el-input placeholder="请输入邮箱" v-model="deptForm.userEmail" disabled></el-input>
         </el-form-item>
       </el-form>
       <template #footer>
@@ -130,7 +130,6 @@ export default {
             userList: [],
             action: "",
             showModel: false,
-            userList: [],
             deptForm: {
                 parentId: [null],
             },
@@ -161,21 +160,63 @@ export default {
     },
     mounted(){
         this.getDeptList()
+        this.getAllUserList()
     },
     methods:{
-        handleOpen(){},
+        handleOpen(){
+          this.showModel = true
+          this.action = 'create'
+        },
         async getDeptList(){
             let list = await this.$api.getDeptList(this.queryForm)
+            console.log('this.$api.getDeptList(this.queryForm):',list);
             this.deptList = list
-            // let list = await this.$api.getDeptList(this.queryForm)
-            // this.deptList = list
         },
-        handleReset(){},
-        handleEdit(){},
-        handleDel(){},
-        handleUser(){},
-        handleClose(){},
-        handleSubmit(){},
+        handleReset(form){
+          this.$refs[form].resetFields()
+        },
+        handleEdit(row){
+          this.action = 'edit'
+          this.showModel = true
+          this.$nextTick(()=>{
+            Object.assign(this.deptForm,row,{
+              userName:`${row.userId}/${row.userName}/${row.userEmail}`,
+            })
+          })
+        },
+        async handleDel(_id){
+          this.action = 'delete'
+          await this.$api.deptOperate({action:this.action,_id})
+          this.$message.success('删除成功！')
+          this.getDeptList()
+        },
+        handleUser(val){
+          console.log(val);
+          const [ userId, userName , userEmail ] = val.split('/')
+          Object.assign(this.deptForm, { userId,userName,userEmail })
+        },
+        handleClose(){
+          this.handleReset('deptForm')
+          this.showModel = false
+        },
+        handleSubmit(){
+          this.$refs.deptForm.validate(async (valid)=>{
+            if(valid){
+              let params = { ...this.deptForm, action:this.action, }
+              delete params.userEmail
+              let res = await this.$api.deptOperate(params)
+              if(res){
+                this.$message.success('操作成功')
+                this.handleClose()
+                this.getDeptList()
+              }
+            }
+          })
+        },
+        async getAllUserList(){
+          this.userList = await this.$api.userAllList()
+        },
+        
     }
 }
 </script>

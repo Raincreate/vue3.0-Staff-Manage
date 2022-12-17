@@ -2,6 +2,8 @@ const router = require('koa-router')()
 const User = require('../models/userSchema')
 const util = require('../utils/util')
 const Counter = require('../models/counterSchema')
+const Menu = require('../models/menuSchema')
+const Role = require('../models/roleSchema')
 const jwt = require('jsonwebtoken')
 router.prefix('/users')
 const md5 = require('md5')
@@ -114,5 +116,64 @@ router.post('/operate', async(ctx) => {
         }
     }
 })
+
+router.get('/all/list', async(ctx) => {
+    try {
+        const list = await User.find({}, "userId userName userEmail")
+        ctx.body = util.success(list)
+    } catch (error) {
+        ctx.body = util.fail(error.stack)
+    }
+})
+
+// 权限的处理
+router.get('/getPremissonList', async(ctx) => {
+    let authorization = ctx.request.headers.authorization
+    let { data } = util.decoded(authorization)
+    let menuList = await getMenuList(data.role, data.roleList)
+    let actionList = await getActionList(JSON.parse(JSON.stringify(menuList)))
+    ctx.body = util.success({ menuList, actionList })
+})
+
+async function getMenuList(userRole, roleKeys) {
+    let rootList = []
+    console.log('userRole:', userRole);
+    // 管理员为userRole 0 
+    if (userRole == 0) {
+        rootList = await Menu.find({}) || []
+    } else {
+        let rootList = await Role.find({ _id: { $in: roleKeys } })
+        let permissionList = []
+        roleList.map(role => {
+            let { checkedKeys, halfCheckedKeys } = role.permissionList
+            console.log(checkedKeys, halfCheckedKeys);
+            permissionList = permissionList.concat(...checkedKeys, ...halfCheckedKeys)
+
+        })
+        permissionList = [...new Set(permissionList)]
+        rootList = await Menu.find({ _id: { $in: permissionList } })
+    }
+    return util.getTree(rootList, null, [])
+}
+
+function getActionList(list) {
+    const actionList = []
+    const deep = (arr) => {
+        while (arr.length) {
+            let item = arr.pop();
+            if (item.action) {
+                item.action.map(action => {
+                    actionList.push(action.menuCode)
+                })
+            }
+            if (item.children && !item.action) {
+                deep(item.children);
+            }
+        }
+    };
+    deep(list)
+
+    return actionList
+}
 
 module.exports = router

@@ -51,11 +51,12 @@ export default {
             mock: false
         })
     },
-    getDeptList() {
+    getDeptList(params) {
         return request({
             url: '/dept/list',
             method: 'get',
-            mock: true
+            mock: false,
+            data: params
         })
     },
     userSubmit(params) {
@@ -99,6 +100,33 @@ export default {
             method: 'post',
             mock: false,
             data: params
+        })
+    },
+    // 所有用户列表
+    userAllList() {
+        return request({
+            url: '/users/all/list',
+            method: 'get',
+            // data: {},
+            mock: false
+        })
+    },
+    // 部门创建/编辑/删除
+    deptOperate(params) {
+        return request({
+            url: '/dept/operate',
+            method: 'post',
+            mock: false,
+            data: params
+        })
+    },
+    // 权限列表
+    permissionList() {
+        return request({
+            url: '/users/getPremissonList',
+            method: 'get',
+            data: {},
+            mock: false
         })
     }
 }

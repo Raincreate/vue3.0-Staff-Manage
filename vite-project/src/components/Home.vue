@@ -36,8 +36,10 @@ import BreadCard from './BreadCard.vue';
         this.noticeCount = res
       },
       async getMenuList(){
-        const res = await this.$api.MenuList()
-        this.userMenu = res
+        const { menuList,actionList } = await this.$api.permissionList()
+        this.userMenu = menuList
+        this.$store.commit("saveMenuList",menuList)
+        this.$store.commit("saveActionList",actionList)
       }
     }
   };

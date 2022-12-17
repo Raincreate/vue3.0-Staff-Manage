@@ -1,20 +1,26 @@
 const router = require('koa-router')()
 const util = require('../utils/util')
-const Menu = require('../models/menuSchema')
-router.prefix('/menu')
+const Dept = require('../models/deptSchema')
+router.prefix('/dept')
 
+// 部门
 router.get('/list', async(ctx) => {
-    const { menuName, menuState } = ctx.request.query
+    const { deptName } = ctx.request.query
     const params = {}
-    if (menuName) params.menuName = menuName
-    if (menuState) params.menuState = menuState
-    const rootList = await Menu.find(params) || []
-    const getMenuTrees = getMenuTree(rootList, null, [])
-    ctx.body = util.success(getMenuTrees)
+    if (deptName) params.deptName = deptName
+    const rootList = await Dept.find(params) || []
+    console.log('Dept.find(params):', params);
+
+    if (deptName) {
+        ctx.body = util.success(rootList)
+    } else {
+        const getMenuTrees = getDeptTree(rootList, null, [])
+        ctx.body = util.success(getMenuTrees)
+    }
 })
 
 // 对菜单列表进行递归遍历
-function getMenuTree(rootList, id, list) {
+function getDeptTree(rootList, id, list) {
     for (let i = 0; i < rootList.length; i++) {
         let item = rootList[i]
         if (String(item.parentId.slice().pop()) == String(id)) {
@@ -23,7 +29,7 @@ function getMenuTree(rootList, id, list) {
     }
     list.map(item => {
         item.children = []
-        getMenuTree(rootList, item._id, item.children)
+        getDeptTree(rootList, item._id, item.children)
         if (item.children.length == 0) {
             delete item.children;
         } else if (item.children.length > 0 && item.children[0].menuType == 2) {
@@ -37,24 +43,24 @@ function getMenuTree(rootList, id, list) {
 // 创建 编辑
 router.post('/operate', async(ctx) => {
     const { _id, action, ...params } = ctx.request.body
-    let res, info
+    let info
 
     try {
-        if (action == 'add') {
-            res = await Menu.create(params)
+        if (action == 'create') {
+            await Dept.create(params)
             info = '创建成功le'
         } else if (action == 'edit') {
             params.updateTime = new Date()
-            await Menu.findByIdAndUpdate(_id, params)
+            await Dept.findByIdAndUpdate(_id, params)
             info = '编辑成功'
         } else {
-            await Menu.findByIdAndRemove(_id)
-            await Menu.deleteMany({ parentId: { $all: [_id] } })
+            await Dept.findByIdAndRemove(_id)
+            await Dept.deleteMany({ parentId: { $all: [_id] } })
             info = '删除成功'
         }
         ctx.body = util.success({}, info)
     } catch (error) {
-        ctx.body = util.fail({}, error)
+        ctx.body = util.fail({}, error.stack)
     }
 })
 

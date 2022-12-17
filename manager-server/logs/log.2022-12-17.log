@@ -1,0 +1,223 @@
+[2022-12-17T14:33:48.522] [ERROR] error - ReferenceError: ctx is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:123:9
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T14:33:51.363] [ERROR] error - ReferenceError: ctx is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:123:9
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T15:49:48.597] [ERROR] error - JsonWebTokenError: invalid signature
+    at C:\Users\rain\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (C:\Users\rain\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\rain\node_modules\jsonwebtoken\verify.js:94:10)
+    at Object.decoded (C:\Users\rain\vue3.0-Staff-Manage\manager-server\utils\util.js:54:24)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:130:25
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T15:50:03.707] [ERROR] error - JsonWebTokenError: invalid signature
+    at C:\Users\rain\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (C:\Users\rain\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\rain\node_modules\jsonwebtoken\verify.js:94:10)
+    at Object.decoded (C:\Users\rain\vue3.0-Staff-Manage\manager-server\utils\util.js:54:24)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:130:25
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T15:50:10.274] [ERROR] error - JsonWebTokenError: invalid signature
+    at C:\Users\rain\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (C:\Users\rain\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\rain\node_modules\jsonwebtoken\verify.js:94:10)
+    at Object.decoded (C:\Users\rain\vue3.0-Staff-Manage\manager-server\utils\util.js:54:24)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:130:25
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T15:51:35.642] [ERROR] error - JsonWebTokenError: invalid signature
+    at C:\Users\rain\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (C:\Users\rain\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\rain\node_modules\jsonwebtoken\verify.js:94:10)
+    at Object.decoded (C:\Users\rain\vue3.0-Staff-Manage\manager-server\utils\util.js:54:24)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:130:25
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T15:52:41.462] [ERROR] error - JsonWebTokenError: invalid signature
+    at C:\Users\rain\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (C:\Users\rain\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\rain\node_modules\jsonwebtoken\verify.js:94:10)
+    at Object.decoded (C:\Users\rain\vue3.0-Staff-Manage\manager-server\utils\util.js:54:24)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:130:25
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T15:53:40.195] [ERROR] error - ReferenceError: getMenuList is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:131:20
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T15:54:15.786] [ERROR] error - ReferenceError: getMenuList is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:131:20
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T15:54:19.326] [ERROR] error - ReferenceError: getMenuList is not defined
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:131:20
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-compose\index.js:42:32)
+    at jwt (C:\Users\rain\node_modules\koa-jwt\lib\index.js:73:16)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T16:12:59.269] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'map')
+    at Object.getTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\utils\util.js:66:14)
+    at getMenuList (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:144:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:132:20
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T16:13:43.176] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'map')
+    at Object.getTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\utils\util.js:66:14)
+    at getMenuList (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:144:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:132:20
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T16:13:52.938] [ERROR] error - TypeError: list.push is not a function
+    at Object.getTree (C:\Users\rain\vue3.0-Staff-Manage\manager-server\utils\util.js:63:22)
+    at getMenuList (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:144:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:132:20
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T16:26:19.038] [ERROR] error - ReferenceError: roleList is not defined
+    at getMenuList (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:146:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:133:20
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T16:29:50.972] [ERROR] error - ReferenceError: roleList is not defined
+    at getMenuList (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:146:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:133:20
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T16:30:51.732] [ERROR] error - ReferenceError: roleList is not defined
+    at getMenuList (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:146:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:133:20
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T16:31:01.040] [ERROR] error - ReferenceError: roleList is not defined
+    at getMenuList (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:146:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:133:20
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T16:31:13.281] [ERROR] error - ReferenceError: roleList is not defined
+    at getMenuList (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:146:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:133:20
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T16:31:23.095] [ERROR] error - ReferenceError: roleList is not defined
+    at getMenuList (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:146:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:133:20
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T16:31:27.966] [ERROR] error - ReferenceError: roleList is not defined
+    at getMenuList (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:146:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:133:20
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T16:32:32.197] [ERROR] error - ReferenceError: roleList is not defined
+    at getMenuList (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:146:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:133:20
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2022-12-17T16:32:43.478] [ERROR] error - ReferenceError: roleList is not defined
+    at getMenuList (C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:146:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\routes\users.js:133:20
+    at async C:\Users\rain\vue3.0-Staff-Manage\manager-server\app.js:36:5
+    at async serve (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\rain\vue3.0-Staff-Manage\manager-server\node_modules\koa-bodyparser\index.js:95:5)

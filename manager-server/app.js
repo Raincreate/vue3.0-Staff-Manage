@@ -12,6 +12,7 @@ const koajwt = require('koa-jwt')
 const users = require('./routes/users')
 const menus = require('./routes/menus')
 const roles = require('./routes/roles')
+const depts = require('./routes/depts')
 
 onerror(app)
 require('./config/db')
@@ -63,6 +64,7 @@ router.get('/leave/count', (ctx) => {
 router.use(users.routes(), users.allowedMethods())
 router.use(menus.routes(), users.allowedMethods())
 router.use(roles.routes(), users.allowedMethods())
+router.use(depts.routes(), depts.allowedMethods())
 app.use(router.routes(), router.allowedMethods())
 
 // error-handling
